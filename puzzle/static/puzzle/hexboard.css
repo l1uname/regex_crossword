@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    
+}
+input 
+{
+  padding: 10px 10px 10px 10px;
+  border:0;
+  outline:0;
+
+}
+
+input:focus {
+    outline:none!important;
+}
+
+.myform {
+text-align:center;
+padding: 8px 8px 8px 8px;
+border-style: none;
+-webkit-appearance: none;
+border: 0;
+text-transform:uppercase;
+}
+
+#id_board {
+    border-style: none;
+}
+
+.container {
+    margin-top: 7%;
+    margin: 1em auto;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    min-height: 50vh;
+}
+
+
+
+
+
+
+.container .hexagonArea {
+    display: flex;
+}
+
+.container .hexagonArea .last {
+    transform: translate(-45px);
+}
+
+.container .hexagonArea .hexagon {
+    position: relative;
+    width: 50px;
+    height: 60px;
+    margin: 0 10px;
+    clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%);
+    background: rgb(192, 184, 184);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.container .hexagonArea .hexagon .myform {
+    width: 40px;
+    background-color: transparent;
+
+}
+
+.container .hexagonArea .hexagon:hover {
+    background: deepskyblue;
+    transform: scale(0.8);
+}
+
+ul,li {
+    list-style-type: none;
+  }
+
+.select_home, .input_home {
+    font-size: 1.8em;
+    font-family: fantasy;
+  }
+  
+.input_home {
+    margin-top: 2%;
+    background-color: transparent;
+    border: none;
+    color: deepskyblue;
+    font-size: 2em;
+  }
+  
+ .input_home:hover {
+    transform: scale(1.2);
+    transition: .5s;
+  }
+
+  input {
+      font-size: 1.7em;
+      color: rgb(33,37,41);
+  }

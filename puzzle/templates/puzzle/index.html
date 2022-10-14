@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<form method='POST'>
+
+  {% csrf_token %}
+  <div class="select_home">
+  {{form.as_p}}
+</div>
+  <input type="submit" class="input_home" value="Continue">
+</form>
+
+{% endblock %}

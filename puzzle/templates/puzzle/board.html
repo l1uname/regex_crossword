@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<link href="{% static 'puzzle/board.css' %}" rel="stylesheet">
+<form method='POST'>
+
+{% csrf_token %}
+<table class="center-screen">
+
+<tr>
+    <td>
+    {% for i in form1 %}
+    {{ i }}
+    {% endfor %}
+    </td>
+</tr>
+
+</table>
+<input type="submit" class="input_home" value="Continue">
+</form>
+
+
+
+
+{% endblock %}

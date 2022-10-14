@@ -1,0 +1,33 @@
+textarea {
+    width: 1.8em;
+    height: 1.7em;
+    margin: 3px;
+    text-align:center;
+    transition: .5s;
+    text-transform:uppercase;
+    background: rgb(192, 184, 184);
+}
+input {
+    font-size: 1.7em;
+    color: rgb(33,37,41);
+}
+.center-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 50vh;
+  }
+
+textarea:hover {
+    background: deepskyblue;
+    transform: scale(0.9);
+}
+
+input {border:0;outline:0;}
+input:focus {outline:none!important;}
+
+.helptext {
+    position: relative;
+    top: calc(-0.45em + 1px);
+}

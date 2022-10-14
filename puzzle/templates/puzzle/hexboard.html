@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<link href="{% static 'puzzle/hexboard.css' %}" rel="stylesheet">
+<form method='POST'>
+
+{% csrf_token %}
+
+<div class="container">
+
+    {% for k,v in my_list.items %}
+    <div class="hexagonArea middle">
+        
+        {% for item in v %}
+        <div class="hexagon">
+        {{ form.board }}
+        </div>
+        {% endfor %}
+    
+
+    </div>
+    {% endfor %}
+
+    <div class="hexagonArea first">
+
+        {% for item in vertical_list %}
+        <div class="hexagon">
+        {{ form.board }}
+        </div>
+        {% endfor %}
+
+    </div>
+    {% for item in horizontal_list %}
+    <div class="hexagonArea last">
+        {% with vertical_list=vertical_list.pop.0 %}
+        {% endwith %}
+        {% for item in vertical_list %}
+        <div class="hexagon">
+        {{ form.board }}
+        </div>
+        {% endfor %}
+    </div>
+    {% endfor %}
+</div>
+</form>
+<a class="input_home" href="{% url "puzzle:documentation" %}">Continue</a>
+
+{% endblock %}
