@@ -1,8 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: unset;
-    resize: none;
 }
 
 
@@ -19,6 +17,10 @@ input
   border:0;
   outline:0;
 
+}
+textarea {
+    border: none;
+    outline: none;
 }
 
 input:focus {
@@ -42,6 +44,8 @@ border: 0;
     font-family: "Century Gothic";
     color: black;
     background: rgb(192, 184, 184);
+    box-sizing: unset;
+    resize: none;
 }
 
 #id_a:hover {

@@ -2,7 +2,7 @@
 {% load static %}
 {% block content %}
 <link href="{% static 'puzzle/hexboard.css' %}" rel="stylesheet">
-<form method='POST'>
+<form novalidate="novalidate" method='POST'>
 
 {% csrf_token %}
 
