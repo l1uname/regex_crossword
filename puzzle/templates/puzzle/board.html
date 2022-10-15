@@ -2,18 +2,20 @@
 {% load static %}
 {% block content %}
 <link href="{% static 'puzzle/board.css' %}" rel="stylesheet">
-<form method='POST'>
+<form novalidate method='POST'>
 
 {% csrf_token %}
 <table class="center-screen">
 
-<tr>
+    {% for i in horizontal_list %}
+    <tr>
+    {% for i in vertical_list %}
     <td>
-    {% for i in form1 %}
-    {{ i }}
-    {% endfor %}
+    {{ form1.a }}
     </td>
-</tr>
+    {% endfor %}
+    </tr>
+    {% endfor %}
 
 </table>
 <input type="submit" class="input_home" value="Continue">

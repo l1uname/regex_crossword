@@ -31,3 +31,38 @@ input:focus {outline:none!important;}
     position: relative;
     top: calc(-0.45em + 1px);
 }
+
+#id_a {
+    border-style: none;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 200%;
+    font-size: 25px;
+    font-family: "Century Gothic";
+    color: black;
+    position: relative;
+    overflow: hidden;
+    width: 50px;
+    height: 50px;
+    margin: 1px;
+    background: rgb(192, 184, 184);
+    display: flex;
+    justify-content: justify;
+    vertical-align: super;
+    text-align-last: center;
+    flex-direction: column;
+    transition: .5s;
+    box-sizing: unset;
+    resize: none;
+}
+textarea {
+    border: none;
+    outline: none;
+}
+
+#id_a:hover {
+    background: deepskyblue;
+}
+tr,td {
+    list-style-type: none;
+}

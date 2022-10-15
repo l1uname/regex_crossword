@@ -29,11 +29,22 @@ padding: 8px 8px 8px 8px;
 border-style: none;
 -webkit-appearance: none;
 border: 0;
-text-transform:uppercase;
 }
 
-#id_board {
+#id_a {
     border-style: none;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 240%;
+    font-size: 25px;
+    font-family: "Century Gothic";
+    color: black;
+    background: rgb(192, 184, 184);
+}
+
+#id_a:hover {
+    background: deepskyblue;
+    
 }
 
 .container {
@@ -70,8 +81,9 @@ text-transform:uppercase;
     clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%);
     background: rgb(192, 184, 184);
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: justify;
+    vertical-align: super;
+    text-align-last: center;
     flex-direction: column;
     cursor: pointer;
     transition: .5s;
