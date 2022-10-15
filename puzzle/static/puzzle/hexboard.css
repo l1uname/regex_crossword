@@ -1,6 +1,8 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: unset;
+    resize: none;
 }
 
 
@@ -85,7 +87,6 @@ border: 0;
     vertical-align: super;
     text-align-last: center;
     flex-direction: column;
-    cursor: pointer;
     transition: .5s;
 }
 
